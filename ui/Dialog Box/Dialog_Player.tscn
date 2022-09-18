@@ -110,13 +110,13 @@ margin_bottom = 12.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
-text = "Click 'GIDDY-UP'. 
+text = "Haz click en 'ARRE'.
 
-Use arrow keys to operate pogo ride. 
+Usa las flechas para operar el asiento de pogo.
 
-Go for insane combos!
+¡Intenta hacer combinaciones locas!
 
-Godot coding by Sharkalien based on Aria \"Gankra\" Beingessner's original ActionScript code."
+Código en Godot por Sharkalien basado en el código ActionScript original de Aria \"Gankra\" Beingessner. Traducido por inconsistentlyMediocre."
 scroll_active = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer/Body_NinePatchRect"]

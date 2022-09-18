@@ -7,7 +7,7 @@ onready var scoreLabel = get_node("CenterContainer/Body_NinePatchRect/MarginCont
 onready var playerName = get_node("PlayerName")
 
 func _ready():
-	scoreLabel.text = "Your current high score is: " + str(mainGame.highScore) + ". Would you like to submit?"
+	scoreLabel.text = "Tu puntuación máxima actual es: " + str(mainGame.highScore) + ". ¿Te gustaría enviarla?"
 	playerName.text = Autoload.player
 #	print(get_tree().get_root())
 #	print(get_tree().get_root().get_node("Game").get("score"))

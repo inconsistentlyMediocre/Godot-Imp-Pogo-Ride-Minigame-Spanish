@@ -116,7 +116,7 @@ position = Vector2( 153, 311 )
 
 [node name="ImpCake" parent="." instance=ExtResource( 4 )]
 position = Vector2( 241, 229 )
-frame = 0
+frame = 1
 
 [node name="BackyardSwing" type="Sprite" parent="."]
 position = Vector2( 530, 699 )
@@ -143,7 +143,7 @@ margin_top = 372.0
 margin_right = 257.0
 margin_bottom = 407.0
 theme = SubResource( 4 )
-text = "Time 29"
+text = "Tiempo 29"
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
@@ -230,7 +230,7 @@ texture_pressed = ExtResource( 15 )
 [node name="ClickHere" type="AnimatedSprite" parent="HUD/Controls"]
 position = Vector2( -32, 0 )
 frames = SubResource( 13 )
-frame = 4
+frame = 5
 playing = true
 centered = false
 

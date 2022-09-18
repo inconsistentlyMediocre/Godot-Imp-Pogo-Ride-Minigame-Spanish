@@ -245,7 +245,7 @@ margin_bottom = 143.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
-text = "Your current high score is: 0. Would you like to submit?"
+text = "Tu puntuación máxima actual es: 0. ¿Te gustaría enviarla?"
 scroll_active = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer/Body_NinePatchRect"]
@@ -263,7 +263,7 @@ margin_top = 332.0
 margin_right = 268.0
 margin_bottom = 374.0
 custom_fonts/font = SubResource( 4 )
-text = "Submit"
+text = "Enviar"
 
 [node name="Skip" parent="." instance=ExtResource( 3 )]
 anchor_right = 0.0
@@ -273,7 +273,7 @@ margin_top = 332.0
 margin_right = 506.0
 margin_bottom = 374.0
 custom_fonts/font = SubResource( 4 )
-text = "Skip"
+text = "Saltar"
 
 [node name="NameLabel" type="RichTextLabel" parent="."]
 margin_left = 378.0
@@ -294,10 +294,10 @@ margin_bottom = 325.0
 theme = SubResource( 7 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 5 )
-text = "Player"
+text = "Jugador"
 max_length = 50
 context_menu_enabled = false
-placeholder_text = "Player"
+placeholder_text = "Jugador"
 placeholder_alpha = 0.4
 caret_blink = true
 __meta__ = {

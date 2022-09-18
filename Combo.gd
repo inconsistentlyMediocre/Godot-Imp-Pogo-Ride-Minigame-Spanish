@@ -1,6 +1,6 @@
 extends Node2D
 
-var combos := ["COMBO!", "WOAH!", "OH SNAP!", "AWESOME!", "WHAAA?!", "NICE!", "SICK", "SHIT IS BANANAS", "DELIRIOUS", "OH NO HE DIDN'T", "DAMN SON", "PRETTY ALRIGHT", "UNBE-FUCKING-LIEVABLE"]
+var combos := ["¡COMBO!", "¡WOW!", "¡OH DIANTRES!", "¡ASOMBROSO!", "¡¿QUEEÉ?!", "¡BIEN!", "ENFERMIZO", "ESTÁ DE LOCOS", "DELIRANTE", "OH NO LO HIZO", "DIABLOS HIJO", "BASTANTE BIEN", "IN-JODIDAMENTE-CREIBLE"]
 var color : Color = Color(randf(), randf(), randf(), 1.0)
 
 

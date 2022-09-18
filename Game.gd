@@ -33,7 +33,7 @@ var highScore : int = 0
 func _process(_delta):
 	Autoload.combos = combos
 	toggleSound()
-	timeLeft.text = "Time " + str(int($Timer.time_left))
+	timeLeft.text = "Tiempo " + str(int($Timer.time_left))
 	if int($Timer.time_left) > 0:
 		if Input.is_action_just_released("ui_left") or Input.is_action_just_released("ui_right"):
 			vel = rot * 0.4
@@ -48,8 +48,8 @@ func _process(_delta):
 			pogoScale -= 0.1
 		elif Input.is_action_pressed("ui_down"):
 			pogoScale += 0.1
-	elif timeLeft.text != "End!":
-		timeLeft.text = "End!"
+	elif timeLeft.text != "¡Fin!":
+		timeLeft.text = "¡Fin!"
 	
 	
 	yVel = yVel + pogoScale * 0.9
