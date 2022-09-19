@@ -1,8 +1,9 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://fonts/Verdana, Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://fonts/Courier New, Bold.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Leaderboard.gd" type="Script" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
 
 [sub_resource type="StyleBoxFlat" id=14]
 bg_color = Color( 0.145098, 0.141176, 0.141176, 1 )
@@ -69,6 +70,7 @@ anchor_bottom = 1.0
 color = Color( 0.980392, 0.596078, 0.0117647, 1 )
 
 [node name="MainWindow" type="Panel" parent="BG"]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -207,7 +209,66 @@ margin_bottom = 262.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
+[node name="LoadingWindow" type="Panel" parent="BG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -203.0
+margin_top = -93.0
+margin_right = 203.0
+margin_bottom = 75.0
+custom_styles/panel = SubResource( 14 )
+
+[node name="Label" type="Label" parent="BG/LoadingWindow"]
+margin_left = 17.0
+margin_top = 2.0
+margin_right = 148.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 16 )
+text = "Pogo Media"
+
+[node name="MainBG" type="Panel" parent="BG/LoadingWindow"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = 25.0
+margin_right = -2.0
+margin_bottom = -2.0
+custom_styles/panel = SubResource( 15 )
+
+[node name="MarginContainer" type="MarginContainer" parent="BG/LoadingWindow/MainBG"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -5.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BG/LoadingWindow/MainBG/MarginContainer"]
+margin_right = 382.0
+margin_bottom = 126.0
+custom_constants/separation = 20
+
+[node name="TextureRect" type="TextureRect" parent="BG/LoadingWindow/MainBG/MarginContainer/HBoxContainer"]
+margin_right = 64.0
+margin_bottom = 126.0
+texture = ExtResource( 4 )
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="BG/LoadingWindow/MainBG/MarginContainer/HBoxContainer"]
+margin_left = 84.0
+margin_top = 43.0
+margin_right = 382.0
+margin_bottom = 82.0
+size_flags_horizontal = 3
+custom_colors/font_color = Color( 0.145098, 0.141176, 0.141176, 1 )
+custom_fonts/font = SubResource( 17 )
+text = "Por favor espera mientras subimos tu puntaje."
+autowrap = true
+
 [node name="HideButton" type="Button" parent="BG"]
+visible = false
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -85.0

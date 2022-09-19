@@ -1,12 +1,17 @@
 extends Control
 
 onready var list := $BG/MainWindow/MainBG/MarginContainer/MainVBox/PlaceListScroll/PlaceList
+onready var loading_window := $BG/LoadingWindow
+onready var main_window := $BG/MainWindow
 onready var hide_button := $BG/HideButton
+
 var place_spot_scene := load("res://LeaderboardPlace.tscn")
 
 
-func _ready():
-	_on_All_pressed()
+func _on_loaded_scores():
+	loading_window.hide()
+	main_window.show()
+	hide_button.show()
 
 
 func clear_list():
@@ -146,3 +151,6 @@ func _on_All_pressed():
 
 func _on_HideButton_pressed():
 	hide()
+	loading_window.show()
+	main_window.hide()
+	hide_button.hide()
