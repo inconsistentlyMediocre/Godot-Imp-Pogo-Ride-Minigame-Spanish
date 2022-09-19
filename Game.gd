@@ -23,7 +23,7 @@ var pogoScale = 0
 var side = 1
 var combos = 0
 var delay = 0
-var score = 0
+var score : int = 0
 var dispScore = 0
 var started = false
 var time

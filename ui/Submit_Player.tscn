@@ -295,7 +295,7 @@ theme = SubResource( 7 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 5 )
 text = "Jugador"
-max_length = 50
+max_length = 16
 context_menu_enabled = false
 placeholder_text = "Jugador"
 placeholder_alpha = 0.4
@@ -304,4 +304,5 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[connection signal="pressed" from="Submit" to="." method="_on_Submit_pressed"]
 [connection signal="pressed" from="Skip" to="." method="_on_Skip_pressed"]
